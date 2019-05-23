@@ -22,7 +22,7 @@ public class BorrarEventoActivity extends AppCompatActivity implements
         botonConfirmacion.setOnTimerFinishedListener(this);
         botonConfirmacion.setOnClickListener(this);
 
-        botonConfirmacion.setTotalTime(3000);
+        botonConfirmacion.setTotalTime(2000);
         botonConfirmacion.startTimer();
     }
 

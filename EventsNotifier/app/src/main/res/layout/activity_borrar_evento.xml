@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BorrarEventoActivity">
+    tools:context=".BorrarEventoActivity"
+    android:background="#ffffff">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,22 +19,24 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-            android:text="Borrando mensaje..." />
+            android:text="Borrando mensaje..."
+            android:textColor="@color/black" />
 
         <android.support.wear.widget.CircularProgressLayout
             android:id="@+id/circular_progress"
-            android:layout_width="wrap_content"
+            android:layout_width="108dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:padding="4dp"
-            app:backgroundColor="@color/dark_blue"
+            app:backgroundColor="@color/colorVerdeClaro"
             app:colorSchemeColors="@color/dark_red"
-            app:strokeWidth="4dp"
-            android:layout_gravity="center_horizontal">
+            app:strokeWidth="4dp">
+
             <ImageView
                 android:id="@+id/image_view"
-                android:src="@drawable/ic_full_cancel"
                 android:layout_width="100dp"
-                android:layout_height="100dp" />
+                android:layout_height="100dp"
+                android:src="@drawable/ic_full_cancel" />
         </android.support.wear.widget.CircularProgressLayout>
 
     </LinearLayout>
